@@ -29,7 +29,6 @@ public class APITest {
                 capabilities); driver = driver1;
 
     }
-    @Test
     public void test1()
     {
         open("ya.ru");
