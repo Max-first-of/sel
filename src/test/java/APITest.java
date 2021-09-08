@@ -44,6 +44,10 @@ public class APITest {
 
     }
     @Test
+    public void test3(){
+        String s = "";
+    }
+    @Test
     public void FirstTest(){
         driver.get("https://ya.ru");
         try {
