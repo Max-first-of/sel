@@ -1,5 +1,7 @@
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +38,8 @@ public class APITest {
         $(byTagName("button")).click();
     }
     @Test
+    @Tag("API TEST")
+    @Description("Важный тест")
     public void test2(){
 
     }
