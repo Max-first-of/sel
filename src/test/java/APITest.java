@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -46,6 +47,7 @@ public class APITest {
     @Test
     public void test3(){
         String s = "";
+        step1();
     }
     @Test
     public void FirstTest(){
@@ -59,6 +61,10 @@ public class APITest {
         element.sendKeys("Работа");
         WebElement search = driver.findElement(By.tagName("button"));
         search.click();
+    }
+    @Step("Воу воу воу")
+    public void step1(){
+
     }
 }
 
