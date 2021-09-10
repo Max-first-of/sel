@@ -32,25 +32,27 @@ public class APITest {
                 capabilities); driver = driver1;
 
     }
-    public void test1()
+    @Test
+    public void test21()
     {
         open("ya.ru");
         $(byXpath("//input[@name='text']")).sendKeys("Примеры проектов автотестов");
         $(byTagName("button")).click();
     }
-    @Test
     @Tag("API TEST")
     @Description("Важный тест")
+    @Test
     public void test2(){
 
     }
+    @Description("Fee")
     @Test
     public void test3(){
         String s = "";
         step1();
     }
     @Test
-    public void FirstTest(){
+    public void test4(){
         driver.get("https://ya.ru");
         try {
             Thread.sleep(3000);
