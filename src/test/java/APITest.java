@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
+import junit.framework.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -43,7 +44,7 @@ public class APITest {
     @Description("Важный тест")
     @Test
     public void test2(){
-
+        Assert.assertEquals("ex", "ex");
     }
     @Description("Fee")
     @Test
