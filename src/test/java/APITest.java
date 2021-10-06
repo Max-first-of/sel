@@ -36,9 +36,7 @@ public class APITest {
     @Test
     public void test21()
     {
-        open("ya.ru");
-        $(byXpath("//input[@name='text']")).sendKeys("Примеры проектов автотестов");
-        $(byTagName("button")).click();
+        Assert.assertEquals("a", "A");
     }
     @Description("Важный тест")
     @Test
