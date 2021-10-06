@@ -40,7 +40,6 @@ public class APITest {
         $(byXpath("//input[@name='text']")).sendKeys("Примеры проектов автотестов");
         $(byTagName("button")).click();
     }
-    @Tag("API TEST")
     @Description("Важный тест")
     @Test
     public void test2(){
